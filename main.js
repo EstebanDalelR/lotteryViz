@@ -75,6 +75,7 @@ function onChoose() {
 	var selAngle = angleScale(sel);
 	angleScale.range([selAngle, selAngle+350]);
 	console.log("#id"+sel);
+	alert(options[sel]);
 	d3.selectAll(".option").style("font-size", "15pt");
 	d3.select("#id" +sel).transition().duration(500)
 		.style("font-size", "50pt")
